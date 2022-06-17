@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>FreeCodeCamp Survey Form</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <section class="container">
-        <h1 id="title"> Survey Form </h1>
+      <div id="formDesc">
+        <h1 id="title">Survey Form</h1>
         <p id="description">
-            This is a survey form built to pass the test on FreeCodeCamp for one of their projects
+          This is a survey form built to pass the test <br />
+          on FreeCodeCamp for one of their projects
         </p>
+      </div>
 
-        <form id="survey-form">
+      <form id="survey-form">
+        <div id="name-div">
+          <label id="name-label" for="name">Name:</label>
+          <input id="name" type="text" placeholder="Name" required />
+        </div>
 
-             <label id="name-label" for="name">Name:</label> 
-            <input id="name" type="text" placeholder="Name" required>
+        <div id="email-div">
+          <label id="email-label" for="email">Email:</label>
+          <input id="email" type="email" placeholder="Email" required />
+        </div>
 
-             <label id="email-label" for="email">Email:</label> 
-            <input id="email" type="email" placeholder="Email" required>
+        <div id="number-div">
+          <label id="number-label" for="age">Age:</label>
+          <input
+            id="number"
+            type="number"
+            min="10"
+            max="99"
+            placeholder="Age"
+            required
+          />
+        </div>
 
-             <label id="number-label" for="age">Age:</label> 
-            <input id="number" type="number" min="10" max="99" placeholder="Age">
+        <div id="dropdown-div">
+          <label for="dropdown">Dropdown:</label>
+          <select id="dropdown">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
 
-            <label for="dropdown">Dropdown:</label>
-            <select id="dropdown">
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-            </select>
-
+        <div id="radio-div">
+          <div>
+            <input type="radio" name="language" value="html" />
             <label for="html">HTML</label>
-            <input type="radio" name="language" value="html">
-
+          </div>
+          <div>
+            <input type="radio" name="language" value="css" />
             <label for="css">CSS</label>
-            <input type="radio" name="language" value="css">
-
+          </div>
+          <div>
+            <input type="radio" name="language" value="javascript" />
             <label for="javascript">JavaScript</label>
-            <input type="radio" name="language" value="javascript">
+          </div>
+        </div>
 
-            <input type="checkbox" value="one">
+        <div id="checkbox-div">
+          <div>
+            <input type="checkbox" value="one" />
             <label for="checkbox">One </label>
-
-            <input type="checkbox" value="two">
+          </div>
+          <div>
+            <input type="checkbox" value="two" />
             <label for="checkbox">Two </label>
-            
-            <input type="checkbox" value="three">
+          </div>
+
+          <div>
+            <input type="checkbox" value="three" />
             <label for="checkbox">Three </label>
+          </div>
+        </div>
+        <textarea id="textAreaBox"></textarea>
 
-            <textarea></textarea>
-
-            <button id="submit" type="submit">Submit</button>
-
-        </form>
+        <button id="submit" type="submit">Submit</button>
+      </form>
     </section>
-    
-</body>
+  </body>
 </html>

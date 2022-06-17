@@ -1,19 +1,60 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(191, 243, 226);
 }
 
+h1 {
+  text-align: center;
+}
 
+p {
+  text-align: center;
+}
+
+#formDesc {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(247, 246, 245);
+  margin: 10px;
+}
 #survey-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(247, 246, 245);
 }
 
 #submit {
-    margin: 30px;
+  margin: 30px;
+}
+
+#checkbox-div div {
+  display: flex;
+  flex-direction: row;
+}
+
+#name-div,
+#email-div,
+#number-div,
+#dropdown-div,
+#radio-div,
+#checkbox-div,
+#textAreaBox {
+  width: 700px;
+  margin: 5px;
+}
+
+#name-div input,
+#email-div input {
+  width: 90%;
+}
+
+#number-div input {
+  width: 91.7%;
 }
